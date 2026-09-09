@@ -11,7 +11,7 @@ Works best with Logisim 2.7.1 (https://sourceforge.net/projects/circuit/) and re
    1. Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ*
    2. Double-click FETCH to open the FETCH sub-circuit
    3. Locate the LOGISIM_RAM used as instruction memory and load the corresponding machine code from TEST_CODE folder.
-   4. Return back from FETCH to main circuit.
+   4. Return from FETCH to main circuit.
 
 ## 3. Run the simulation to explore the CPU.
 
