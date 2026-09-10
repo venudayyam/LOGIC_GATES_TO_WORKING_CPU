@@ -8,18 +8,27 @@ Works best with Logisim 2.7.1 (https://sourceforge.net/projects/circuit/) and re
 
 
 
-## 2. Run the simulation to explore the CPU.
- 1. Press RESET Pin (Global) a few times before Loading Machine Code and Running/Clocking CPU.
- 2. If you see any error(red) connections, reload (right click on the file and select reload library) supporting files (such as *REGISTERS.circ*) a few times until they disappear. Then press Reset a few times.
- 3. Load test code (Machine Code) to memory.
-    1. Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ
-    2. Double-click FETCH to open the FETCH sub-circuit
-    3. Locate the LOGISIM_RAM used as instruction memory and load the corresponding machine code from TEST_CODE folder.
-    4. Return from FETCH to main circuit.
-4. Clock/Run the CPU
-   1. FOR NON IO CPU:<br>
-    Verify the final values in registers, data memory, stack, etc.. (with values in file *TEST_CODE_NON_IO.txt*)
-   2. FOR IO CPU:<br>
+## 2. Getting CPU Simulation ready.
+ * Enable Simulation if not done by default on file open.
+ 
+ * Open the required CPU circuit (CPU_NON_IO or CPU_IO) in 8BIT_CPU.circ 
+   
+ * Press RESET Pin (Global) a few times before Loading Machine Code and Running/Clocking CPU.
+   
+ * If you see any red/error connections: Right-click the supporting files (REGISTERS.circ, 8BIT_ALU.circ) and select Reload Library. Then press Reset Pin. Repeat this until no errors. Otherwise, continue to the next step.
+ ## 3. Load test code (Machine Code) to memory.
+* Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ
+  
+* Double-click FETCH to open the FETCH sub-circuit
+  
+* Locate the LOGISIM_RAM used as instruction memory and load the corresponding machine code from TEST_CODE folder.
+  
+* Return from FETCH to main circuit.
+      
+## 4. Clock/Run the CPU
+   * FOR NON IO CPU:<br>
+    Verify the final values in registers, data memory, stack, etc.. after the cpu halt. (with/against values in file *TEST_CODE_NON_IO.txt*)
+   * FOR IO CPU:<br>
     Enter random text on keyboard before running CPU. Sit back while the program prints the input text onto display character by character. Deliberately stop the CPU afterwards as it waits infinitely for key input.
     
 <br>
