@@ -8,11 +8,11 @@ Works best with Logisim 2.7.1 (https://sourceforge.net/projects/circuit/) and re
 
 
 
-## 3. Run the simulation to explore the CPU.
- 1. Press Global Reset a few times before Loading Machine Code and Running/Clocking CPU.
- 2. If you see any error(red) connections, reload supporting files (such as *REGISTERS.circ*) a few times until they disappear.
+## 2. Run the simulation to explore the CPU.
+ 1. Press RESET Pin (Global) a few times before Loading Machine Code and Running/Clocking CPU.
+ 2. If you see any error(red) connections, reload (right click on the file and select reload library) supporting files (such as *REGISTERS.circ*) a few times until they disappear. Then press Reset a few times.
  3. Load test code (Machine Code) to memory.
-    1. Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ*
+    1. Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ
     2. Double-click FETCH to open the FETCH sub-circuit
     3. Locate the LOGISIM_RAM used as instruction memory and load the corresponding machine code from TEST_CODE folder.
     4. Return from FETCH to main circuit.
