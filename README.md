@@ -15,7 +15,7 @@ Works best with Logisim 2.7.1 (https://sourceforge.net/projects/circuit/) and re
    
  * Press RESET Pin (Global) a few times before Loading Machine Code and Running/Clocking CPU.
    
- * If you see any red/error connections: Right-click the supporting files (REGISTERS.circ, 8BIT_ALU.circ) and select Reload Library. Then press Reset Pin. Repeat this until no errors. Otherwise, continue to the next step.
+ * If you see any red/error connections: Right-click the supporting files (REGISTERS.circ, 8BIT_ALU.circ) and select Reload Library. Then press Reset Pin. Repeat this until no errors.
  ## 3. Load test code (Machine Code) to memory.
 * Open the required CPU circuit (*CPU_NON_IO or CPU_IO*) in *8BIT_CPU.circ
   
